@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "../UI/Card"
 import styles from "./Cartoon.module.css"
-const Cartoon = ({t, useTranslation}) => {
+const Cartoon = ({ t }) => {
   return (
     <Card>
       <div className={styles.illustration}>
