@@ -20,7 +20,7 @@ const Home = ({chilangos, table, setTable, chilango, theme, t}) => {
       }
 
       setTable(chilango[i])
-    }, 20000)
+    }, 86400000)
   }, [setTable, chilango])
 
 
