@@ -84,28 +84,3 @@ const Signup = () => {
 }
 
 export default Signup
-
-// const Button = styled.button`
-//   color: ${props => (props.theme.mode === 'dark' ? 'black' : 'black')};
-//   padding: 12px 15px;
-//   background-color: ${props =>
-//     props.theme.mode === 'dark' ? 'gray' : 'gray'};
-//   opacity: 0.75;
-//   font-size: 15px;
-//   width: 100%;
-//   border-radius: 3px;
-//   border-width: 0.5px;
-//   border-color: gray;
-//   margin-top: 15px;
-//   transition: ease 0.01s all;
-//   text-transform: uppercase;
-//   box-shadow: 0px 2px 2px gray;
-//   text-align: center;
-//   transition: ease background-color 250ms;
-//   :active {
-//     opacity: 0.3;
-//     color: black;
-//     background-color: ${props =>
-//       props.theme.mode === 'dark' ? 'aliceblue' : 'purple'};
-//   }
-// `

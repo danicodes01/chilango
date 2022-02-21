@@ -11,7 +11,6 @@ import Profile from './Components/main/Profile'
 import SearchList from './Components/table/SearchList'
 import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import Menu from './Components/main/Menu'
-// import getPosts from './Components/post/apiPost'
 import chilango from './chilango'
 import { isAuthenticated } from './auth'
 
@@ -51,7 +50,6 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <div className={styles.App}>
-        {/* <Header /> */}
         <Router>
           <main>
             <Header theme={theme} />

@@ -3,7 +3,7 @@ import Card from "../../UI/Card"
 import styles from "./GoToHome.module.css"
 import { Link, withRouter } from "react-router-dom"
 
-const GoToHome = ({history, t}) => {
+const GoToHome = ({ t }) => {
   return (
     <Card>
       <div className={styles.home}>

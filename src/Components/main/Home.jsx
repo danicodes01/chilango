@@ -3,13 +3,11 @@ import Spanish from '../table/Spanish'
 import Phrase from '../table/Phrase'
 import English from '../table/English'
 import Examples from '../table/Examples'
-// import Cartoon from '../table/Cartoon'
 import Search from '../table/Search'
-// import Posts from '../post/Posts'
 import styles from './Home.module.css'
 
 
-const Home = ({chilangos, setChilangos, table, setTable, chilango, theme, t, useTranslation}) => {
+const Home = ({chilangos, table, setTable, chilango, theme, t}) => {
 
 
 
