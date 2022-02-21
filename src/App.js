@@ -22,11 +22,11 @@ const App = () => {
   const [userProfileClicked, setUserProfileClicked] = useState(false)
   const [chilangos, setChilangos] = useState([])
   const [table, setTable] = useState(chilango[0])
-  // const [table, setTable] = useState(chilangos[0])
   const { t, i18n } = useTranslation()
   function getLang (lang) {
     i18n.changeLanguage(lang)
   }
+  //testing
 
   useEffect(() =>{
     return fetch(`${process.env.REACT_APP_API_URL}/chilango`, {
