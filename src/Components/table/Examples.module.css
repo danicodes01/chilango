@@ -1,0 +1,26 @@
+.examples{
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 3rem 1.5rem 3.5rem 1.5rem;
+    margin-bottom:3000px;
+    margin-top:0px;
+    /* border-radius: 522px; */
+  }
+
+  .speaker {
+    width: 2%;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    left: 12px;
+    top: 500px;
+    
+}
+
+@media (max-width: 620px) {
+  .speaker {
+    width: 5%;
+ 
+  }
+  
+  }

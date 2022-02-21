@@ -1,0 +1,33 @@
+/* * {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background: aliceblue;
+}
+
+body {
+  margin: 0;
+} */
+
+* {
+  box-sizing: border-box;
+  color: gray;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0A1A2F;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+

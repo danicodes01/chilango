@@ -1,0 +1,11 @@
+.header {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.link {
+  display: flex ;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}

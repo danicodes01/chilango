@@ -1,0 +1,37 @@
+.english {
+
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+    margin: 0 0 2px;
+    /* border-radius: 12px; */
+  }
+
+
+  .gabacho {
+    z-index: 10;
+    position: absolute;
+    left: 46px;
+    top:370px;
+    opacity: .6;
+  }
+
+  .speaker {
+    width: 2%;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    left: 12px;
+    top: 370px;
+    
+}
+
+@media (max-width: 620px) {
+  .speaker {
+    width: 5%;
+ 
+  }
+  
+  
+  }
+  

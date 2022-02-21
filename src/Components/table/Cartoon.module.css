@@ -1,0 +1,17 @@
+.cartoon {
+
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 2.6rem;
+  margin:  0;
+    /* border-radius: 12px; */
+  }
+
+  .illustration {
+    z-index: 10;
+    position: absolute;
+    left: 30px;
+    top:620px;
+    opacity: .36;
+  }
+  

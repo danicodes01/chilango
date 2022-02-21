@@ -1,0 +1,17 @@
+.home {
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    margin: 0px 0;
+    padding: 3rem;
+
+      /* border-radius: 12px; */
+    }
+
+    .link {
+        display: flex ;
+        justify-content: center;
+        margin-top: -10px;
+       
+        
+    }

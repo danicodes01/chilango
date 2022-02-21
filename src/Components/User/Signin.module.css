@@ -1,0 +1,53 @@
+.input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input {
+    font: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: black;
+  }
+  
+  .err {
+    width: 100%;
+    height: 2px;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: gray;
+    opacity: 0.66;
+  }
+  
+  .open {
+    width: 100%;
+    height: 2px;
+    padding-bottom: 16px;
+    font-size: 0.90rem;
+    text-align: center;
+    color: gray;
+    opacity: 0.66;
+  }
+  
+  .pword {
+    -webkit-text-security: disc;
+    text-security: disc;
+    color: black;
+    
+  }
