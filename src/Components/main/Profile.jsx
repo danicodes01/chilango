@@ -43,7 +43,7 @@ const Profile = ({
   if (goToSignIn) {
     return <Redirect to="/signin" />
   }
-
+console.log(user)
   return (
     <div>
       <Idioma

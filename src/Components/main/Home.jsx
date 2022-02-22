@@ -4,7 +4,7 @@ import Phrase from '../table/Phrase'
 import English from '../table/English'
 import Examples from '../table/Examples'
 import Search from '../table/Search'
-import styles from './Home.module.css'
+
 
 
 const Home = ({chilangos, table, setTable, chilango, theme, t}) => {
