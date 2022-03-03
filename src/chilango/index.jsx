@@ -2,7 +2,7 @@ const chilango = [
   {
     id: "0",
     phrase: "Carnal",
-    spanish: "Hermano que no es hermano, pero que si es hermano i.e. Gran Amigx",
+    spanish: "Hermanx que no es hermanx, pero que si es hermanx i.e. Gran Amigx",
     english: "Brother from another mother i.e. chosen family",
     exampleS: "Alejandro: 'Eres mi carnal Dani. Te quiero mucho'",
     exampleSb: "",
