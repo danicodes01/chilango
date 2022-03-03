@@ -70,7 +70,7 @@ button {
     :active {
         opacity: .5;
         color: black;
-        background-color: ${props => props.theme.mode === 'dark' ? 'aliceblue' : 'aliceblue'};
+        background-color: ${props => props.theme.mode === 'dark' ? '#93FFD8' : 'purple'};
        
     }
 }
