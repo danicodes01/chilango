@@ -26,8 +26,7 @@ const App = () => {
   function getLang (lang) {
     i18n.changeLanguage(lang)
   }
-  //getting ready to deploy bleh
-  // nothing to see here
+
 
   useEffect(() =>{
     return fetch(`${process.env.REACT_APP_API_URL}/chilango`, {

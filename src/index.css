@@ -8,10 +8,9 @@
 
 body {
   width: 100%;
-  overflow-x: hidden;
+
   background-color: #0A1A2F;
-  -webkit-overflow-scrolling: touch;
-  overflow: hidden;
+
 }
 
 a {
