@@ -26,9 +26,9 @@ const SearchList = ({ chilangos, theme, t }) => {
   useEffect(() => {
     const results = chilangos.filter(
       (chil) =>
-        chil.phrase.toLowerCase().indexOf(searchInput) !== -1 ||
-        chil.english.toLowerCase().indexOf(searchInput) !== -1 ||
-        chil.spanish.toLowerCase().indexOf(searchInput) !== -1
+        chil.phrase.toLowerCase().indexOf(searchInput.toLowerCase()) !== -1 ||
+        chil.english.toLowerCase().indexOf(searchInput.toLowerCase()) !== -1 ||
+        chil.spanish.toLowerCase().indexOf(searchInput.toLowerCase()) !== -1
     )
     setSearchResults(results)
   }, [chilangos, searchInput])
@@ -65,6 +65,7 @@ const SearchList = ({ chilangos, theme, t }) => {
                       </ul>
                     </div>
                   )}
+                  
                 {searchInput.toLowerCase() === result.phrase.toLowerCase() ||
                 searchInput.toLowerCase() === result.english.toLowerCase() ||
                 searchInput.toLowerCase() === result.spanish.toLowerCase() ? (
