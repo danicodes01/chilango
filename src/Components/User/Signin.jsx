@@ -7,7 +7,7 @@ const Signin = (props) => {
   const [enteredEmail, setEnteredEmail] = useState("") 
   const [enteredPassword, setEnteredPassword] = useState("")
   const [err, setErr] = useState("")
-  const [open, setOpen] = useState(false)
+  const [success, setSuccess] = useState(false)
   const [redirect, setRedirect] = useState(false)
 
   if (redirect) {
@@ -23,7 +23,7 @@ const Signin = (props) => {
       if (data.error) {
         setErr(data.error)
       } else {
-        setOpen(true)
+        setSuccess(true)
         authenticate(data, () => setRedirect(true))
       }
     })
@@ -31,19 +31,19 @@ const Signin = (props) => {
 
   const userEmailChangeHandler = (e) => {
     setErr("")
-    setOpen(false)
+    setSuccess(false)
     setEnteredEmail(e.target.value)
   }
   const userPasswordChangeHandler = (e) => {
     setErr("")
-    setOpen(false)
+    setSuccess(false)
     setEnteredPassword(e.target.value)
   }
   return (
     <div className={styles.input}>
       {err && <div className={styles.err}>{err}</div>}
-      {open && (
-        <div className={styles.open}>
+      {success && (
+        <div className={styles.success}>
           Oh nice! you're all signed up!❤️ Feel free to login whenever 😻
         </div>
       )}

@@ -6,7 +6,7 @@ const Signup = () => {
   const [enteredName, setEnteredName] = useState('')
   const [enteredEmail, setEnteredEmail] = useState('')
   const [enteredPassword, setEnteredPassword] = useState('')
-  const [open, setOpen] = useState(false)
+  const [success, setSuccess] = useState(false)
   const [err, setErr] = useState('')
 
   const addUserHandler = e => {
@@ -25,31 +25,31 @@ const Signup = () => {
         setEnteredName('')
         setEnteredEmail('')
         setEnteredPassword('')
-        setOpen(true)
+        setSuccess(true)
       }
     })
   }
 
   const usernameChangeHandler = e => {
     setErr('')
-    setOpen(false)
+    setSuccess(false)
     setEnteredName(e.target.value)
   }
   const userEmailChangeHandler = e => {
     setErr('')
-    setOpen(false)
+    setSuccess(false)
     setEnteredEmail(e.target.value)
   }
   const userPasswordChangeHandler = e => {
     setErr('')
-    setOpen(false)
+    setSuccess(false)
     setEnteredPassword(e.target.value)
   }
   return (
     <div className={styles.input}>
       {err && <div className={styles.err}>{err}</div>}
-      {open && (
-        <div className={styles.open}>
+      {success && (
+        <div className={styles.success}>
           Oh nice! you're all signed up!❤️ Feel free to Sign in whenever 😻
         </div>
       )}
