@@ -10,6 +10,7 @@ const Idioma = ({t, englishPrimary, getLang, setEnglishPrimary, setSpanishPrimar
       <br/>
       {englishPrimary ? (
         <button
+          className={styles.btn}
           onClick={() => {
             getLang("sp")
             setEnglishPrimary(false)
@@ -20,6 +21,7 @@ const Idioma = ({t, englishPrimary, getLang, setEnglishPrimary, setSpanishPrimar
         </button>
       ) : (
         <button
+        className={styles.btn}
           onClick={() => {
             getLang("en")
             setSpanishPrimary(false)

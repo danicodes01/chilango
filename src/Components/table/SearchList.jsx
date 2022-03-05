@@ -43,7 +43,7 @@ const SearchList = ({ chilangos, theme, t }) => {
         <div className={styles.search_input}>
           <input
             type="text"
-            placeholder={t("searchBar")}
+            placeholder={t("searchBar")} 
             value={searchInput}
             onChange={inputChangeHandler}
           />
