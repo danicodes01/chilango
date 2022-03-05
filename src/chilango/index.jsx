@@ -1,16 +1,6 @@
 const chilango = [
   {
     id: "0",
-    phrase: "Carnal",
-    spanish: "Hermanx que no es hermanx, pero que si es hermanx i.e. Gran Amigx",
-    english: "Brother from another mother i.e. chosen family",
-    exampleS: "Alejandro: 'Eres mi carnal Dani. Te quiero mucho'",
-    exampleSb: "",
-    exampleE: "Alejandro: 'You are like family to me Dani. I love you a lot'",
-    exampleEb: "",
-  },
-  {
-    id: "01",
     phrase: "Sin copa",
     spanish: "solo quiero una tortilla con mi taco",
     english: "I want one tortilla with my taco",
@@ -18,6 +8,16 @@ const chilango = [
     exampleSb: "el senior de los tacos: 'Sale güero!'",
     exampleE: "some blondie: 'Give me two suadero tacos with everything, on one tortilla please'",
     exampleEb: "owner of taco place: 'You got it blondie.'",
+  },
+  {
+    id: "01",
+    phrase: "Carnal",
+    spanish: "Hermanx que no es hermanx, pero que si es hermanx i.e. Gran Amigx",
+    english: "Brother from another mother i.e. chosen family",
+    exampleS: "Alejandro: 'Eres mi carnal Dani. Te quiero mucho'",
+    exampleSb: "",
+    exampleE: "Alejandro: 'You are like family to me Dani. I love you a lot'",
+    exampleEb: "",
   },
   {
     id: "02",
