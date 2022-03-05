@@ -57,7 +57,7 @@ const Signin = (props) => {
         />
         <label htmlFor="password">password</label>
         <input
-          autoComplete="off"
+          autoComplete="new-password"
           className={styles.pword}
           onChange={userPasswordChangeHandler}
           id="password"

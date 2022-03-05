@@ -70,7 +70,7 @@ const Signup = () => {
         />
         <label htmlFor='password'>password</label>
         <input
-          autoComplete="off"
+          autoComplete="new-password"
           onChange={userPasswordChangeHandler}
           className={styles.pword}
           id='password'
