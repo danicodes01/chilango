@@ -1,23 +1,21 @@
-import React from 'react'
-import styles from './Darkmode.module.css'
-import Card from '../../UI/Card'
+import React from "react"
+import styles from "./Darkmode.module.css"
+import Card from "../../UI/Card"
 
-
-
-const Darkmode = ({theme, t, setTheme}) => {
-    return (
-      <Card>
-
-        <div className={styles.darkmode}>
+const Darkmode = ({ theme, t, setTheme }) => {
+  return (
+    <Card>
+      <div className={styles.darkmode}>
         <br />
         {theme.mode === "light" ? (
           <h3 className={styles.h3}>{t("darkModeTxt")}</h3>
         ) : (
           <h3 className={styles.h3}>{t("lightModeTxt")}</h3>
         )}
-        <br/>
+        <br />
         {theme.mode === "light" ? (
           <button
+            className={styles.btn}
             onClick={() => {
               setTheme(
                 theme.mode === "dark" ? { mode: "light" } : { mode: "dark" }
@@ -28,6 +26,7 @@ const Darkmode = ({theme, t, setTheme}) => {
           </button>
         ) : (
           <button
+            className={styles.btn}
             onClick={() => {
               setTheme(
                 theme.mode === "dark" ? { mode: "light" } : { mode: "dark" }
@@ -37,10 +36,9 @@ const Darkmode = ({theme, t, setTheme}) => {
             {t("lightModeBtn")}
           </button>
         )}
-        </div>
-      </Card>
-    )
+      </div>
+    </Card>
+  )
 }
 
 export default Darkmode
-
