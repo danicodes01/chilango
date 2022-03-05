@@ -13,7 +13,8 @@ const SearchList = ({ chilangos, theme, t }) => {
   const [searchResults, setSearchResults] = useState([])
   const [selectedPhrase, setSelectedPhrase] = useState(false)
   const [selectedPhraseValue, setSelectedPhraseValue] = useState(searchInput)
-  const inputLength = searchInput.length > 0
+  const inputLength = searchInput.length > 0 
+
 
 
 
@@ -33,6 +34,9 @@ const SearchList = ({ chilangos, theme, t }) => {
     setSearchResults(results)
   }, [chilangos, searchInput])
 
+
+
+
   return (
     <Card>
       <div className={styles.hello}>
@@ -50,7 +54,8 @@ const SearchList = ({ chilangos, theme, t }) => {
                   searchInput.toLowerCase() !== result.phrase.toLowerCase() &&
                   searchInput.toLowerCase() !== result.english.toLowerCase() &&
                   searchInput.toLowerCase() !==
-                    result.spanish.toLowerCase() && (
+                  result.spanish.toLowerCase() && (
+                    
                     <div>
                       <ul>
                         <li
@@ -58,6 +63,7 @@ const SearchList = ({ chilangos, theme, t }) => {
                           onClick={() => {
                             setSelectedPhrase(true)
                             setSelectedPhraseValue(result)
+                            setSearchResults([result])
                           }}
                         >
                           {result.phrase}
