@@ -14,7 +14,6 @@ import Menu from './Components/main/Menu'
 import chilango from './chilango'
 import { isAuthenticated } from './auth'
 
-
 const App = () => {
   const [theme, setTheme] = useState({ mode: 'dark' })
   const [englishPrimary, setEnglishPrimary] = useState(true)
@@ -27,25 +26,25 @@ const App = () => {
     i18n.changeLanguage(lang)
   }
 
-
-  useEffect(() =>{
+  useEffect(() => {
     return fetch(`${process.env.REACT_APP_API_URL}/chilango`, {
-      method: "GET",
+      method: 'GET',
       headers: {
-          Accept: "application/json",
-      },
-  })
-  .then(response=> {
-      return response.json()
-  })
-  .catch(err => console.log(err)).then((data) => {
-            if (data.error) {
-              console.log(data.error)
-            } else {
-                setChilangos(data)
-            }
-          })
-        }, [])
+        Accept: 'application/json'
+      }
+    })
+      .then(response => {
+        return response.json()
+      })
+      .catch(err => console.log(err))
+      .then(data => {
+        if (data.error) {
+          console.log(data.error)
+        } else {
+          setChilangos(data)
+        }
+      })
+  }, [])
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -61,41 +60,45 @@ const App = () => {
             ) : (
               <Redirect to='/signin' />
             )}
-            <Switch>
-              <Route exact path='/'>
-                <Home
-                  chilangos={chilangos}
-                  chilango={chilango}
-                  table={table}
-                  setTable={setTable}
-                  theme={theme}
-                  t={t}
-                  useTranslation={useTranslation}
-                />
-              </Route>
-              <Route exact path='/signup'>
-                <Signup />
-              </Route>
-              <Route exact path='/signin'>
-                <Signin />
+            {isAuthenticated ? (
+              <Switch>
+                <Route exact path='/'>
+                  <Home
+                    chilangos={chilangos}
+                    chilango={chilango}
+                    table={table}
+                    setTable={setTable}
+                    theme={theme}
+                    t={t}
+                    useTranslation={useTranslation}
+                  />
                 </Route>
-              <Route exact path='/user/searchlist'>
-                <SearchList chilangos={chilangos} t={t}/>
-              </Route>
-              <Route exact path='/user/:userId'>
-                <Profile
-                  getLang={getLang}
-                  setEnglishPrimary={setEnglishPrimary}
-                  useTranslation={useTranslation}
-                  setTheme={setTheme}
-                  englishPrimary={englishPrimary}
-                  setSpanishPrimary={setSpanishPrimary}
-                  spanishPrimary={spanishPrimary}
-                  t={t}
-                  theme={theme}
-                />
-              </Route>
-            </Switch>
+                <Route exact path='/signup'>
+                  <Signup />
+                </Route>
+                <Route exact path='/signin'>
+                  <Signin />
+                </Route>
+                <Route exact path='/user/searchlist'>
+                  <SearchList chilangos={chilangos} t={t} />
+                </Route>
+                <Route exact path='/user/:userId'>
+                  <Profile
+                    getLang={getLang}
+                    setEnglishPrimary={setEnglishPrimary}
+                    useTranslation={useTranslation}
+                    setTheme={setTheme}
+                    englishPrimary={englishPrimary}
+                    setSpanishPrimary={setSpanishPrimary}
+                    spanishPrimary={spanishPrimary}
+                    t={t}
+                    theme={theme}
+                  />
+                </Route>
+              </Switch>
+            ) : (
+              <Redirect to='/signin' />
+            )}
           </main>
         </Router>
       </div>
